@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Uygulama : Cards</title>
+	<style>
+		*{
+			box-sizing: border-box;/*eklenen değerler otomatik çıkarılır box tan*/
+			margin: 0;
+			padding: 0;
+		}
+	
+		.card{
+			margin: 20px;
+			width: 40%;/*sayfanın 40% */
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);/*gölgelendirme-yatay:0;yukarıdan aşağı 4px;blur efekt:8px ; dağılması:0 ;opacity:rgba */
+			border-radius: 5px;
+			
+			-webkit-transition: box-shadow 0.3s;/*tarayıcı desteği*/
+			transition: box-shadow 0.3s;/*efekt box shadow ile*/
+		}
+		
+		.card-image{
+			width: 100%; /*karta sığması için*/
+			max-height: 250px;/*maks yükseklik kaliteyi bozar onun için*/
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			
+			-webkit-transition: opacity 200ms ease;/*tarayıcı desteği*/
+			transition: opacity 200ms ease;/*op,delay,tıming-func(ease efekti)*/
+		}
+		
+		.card-image:hover{
+			opacity: 0.8;/*resme gelince efekt*/
+		}
+		
+		.card:hover{
+			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		}
+		
+		.card-body{
+			padding: 10px 16px;/*üst alt sol sağ*/
+		}
+		
+		.card-title{
+			margin-bottom: 15px;
+			font-size: 22px;
+		}
+	
+	</style>
+</head>
+<body>
+
+   <div class="card">
+   	
+   		<img src="img/1.jpeg" alt="" class="card-image">
+   		<div class="card-body">
+   			<h4 class="card-title">
+   				Card Title
+   			</h4>
+   			<p class="card-text">
+   				Card Body
+   			</p>
+   		</div> 	
+   	
+   	
+   </div>
+	
+</body>
+</html>

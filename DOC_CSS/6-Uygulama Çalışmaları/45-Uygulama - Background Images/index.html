@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Background Image</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<style>
+		/*
+			rgba(230, 255, 230, 0.7)
+			rgba(102, 255, 102, 0.7)
+		
+		*/
+
+		* {/*çerçeveyi tarayıcıya yerleştir*/
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			font-family: 'Open Sans', sans-serif;/*daha iyi fontlar seç*/
+		}
+
+		.header {/*html color picker*/
+			background-image: /*soldan aşağıya to left..*/
+				linear-gradient(to left bottom,/*renk geçişleri ayarlamak*/
+					rgba(102, 255, 102, 0.7),/*yeşil geçiş .07opacity*/
+					rgba(230, 255, 230, 0.7)),
+				    url(img/bg.jpeg);/*img yi yerleştirdik*/
+			height: 95vh;/*görünür alanın 95% :viewport*/
+			background-size: cover;/*en boy bozulmadan resim yerleşir*/
+			background-position: top;/*üst köşe sbt olarak crop edilir, left: sol sbt kalır , bottom:alt kısım sbt,kalan croplanır */
+			clip-path: polygon(0 0,100% 0,100% 100%, 0 87%);/*kesikli çerçeve*/
+			position: relative;
+		}
+		
+		.heading {
+			text-transform: uppercase;
+			color: white;
+			position: absolute;/*header a göre sabitlenir*/
+			top:40%;/*ortalamak için*/
+			left: 50%;
+			text-align: center;
+			transform: translate(-50%,-50%);/*konumla oynamak sğdan sola kay ve aşağıdan yukarıya 50%*/
+		}
+		
+		.heading-main {
+			display: block;/*title lar alt alta*/
+			font-size: 50px;
+			letter-spacing: 10px;/*harf aralıkları*/
+		}
+		
+		.heading-sub {
+			display: block;
+			font-size: 30px;
+			letter-spacing: 5px;
+		}
+		
+		.logo-box {
+			position: absolute;/*konumlandırma header a göre yapılır(relative nesneye göre)*/
+			top: 30px;
+			left: 40px;
+		}
+		
+		.logo {
+			height: 50px;/*genişlik yüksekliğe göre ayarlanır*/
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<header class="header">
+
+		<div class="logo-box">
+			<img class="logo" src="img/logo.png" alt="">
+		</div>
+
+		<h1 class="heading">
+			<span class="heading-main">Main Title</span>
+			<span class="heading-sub">Sub Title</span>
+		</h1>
+
+	</header>
+
+</body>
+
+</html>

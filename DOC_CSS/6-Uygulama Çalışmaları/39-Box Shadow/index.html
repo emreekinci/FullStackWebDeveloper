@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Box Shadow</title>
+	
+	<style>
+		/*css shadow property*/
+        /*soldan sağa 10px ,yukarıdan aşağıya 12px,5px:gölgelendirme ,gölgelendirme dağıtılması */
+		body{
+			background: #f2f2f2;
+		}
+	
+		.card{
+			width: 200px;
+			height: 200px;
+			background: #fff;
+			border-radius: 2px;
+			margin: 20px;
+			display: inline-block;/*kutuları yanyana getirmek için*/
+		}
+		
+		.card-1{/*tarayıcı eklentilerinde çalışması için*/
+			-webkit-box-shadow: 10px 10px;
+			-mox-box-shadow: 10px 10px;
+			box-shadow: 10px 10px;
+		}
+		
+		.card-2{
+			-webkit-box-shadow:  10px 10px 20px;/*gölgelendirme*/
+			-mox-box-shadow:  10px 10px 20px;
+			box-shadow: 10px 10px 20px;
+		}
+		
+		.card-3{
+			-webkit-box-shadow:10px 10px 20px 2px rgba(0,0,0,.3);/*gölgelendirme dağıtımı*/
+			-mox-box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+			box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+		}
+		
+		.card-4{
+			
+		}
+		
+		.card-4:hover{/*transition : zaman için*/
+			-webkit-box-shadow:10px 10px 20px 2px rgba(0,0,0,.3);
+			-mox-box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+			box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+		}
+		
+		.card-5{		
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.30);/*gölgelendirmeleri üst üste getirme*/
+		}
+		
+		.card-6{/*soldan sağa 10px ,yukarıdan aşağıya 12px,5px:gölgelendirme ,gölgelendirme dağıtılması */
+			border: 1px solid #BFBFBF;
+			box-shadow: 20px 12px 5px #aaaaaa;/*rgba(0,0,0,0.25)*/
+		}
+	
+	
+	</style>
+</head>
+<body>
+	
+	<div class="card card-1"></div>
+	<div class="card card-2"></div>
+	<div class="card card-3"></div>
+	<div class="card card-4"></div>
+	<div class="card card-5"></div>
+	<div class="card card-6"></div>
+	
+	
+</body>
+</html>

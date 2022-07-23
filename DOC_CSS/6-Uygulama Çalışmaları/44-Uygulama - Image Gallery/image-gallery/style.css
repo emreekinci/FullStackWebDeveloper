@@ -1,0 +1,38 @@
+/*img ye sabit genişlik ve yükseklik ver.*/
+* {/*border padding dahil edilir,margin değil*/
+	box-sizing: border-box;
+}
+
+
+#gallery {/*içerik sabitlemek*/
+	width: 1000px;
+	margin: 20px auto;
+}
+
+.item-container {	
+	width: 25%;
+	float: left;
+	padding: 10px;
+}
+
+.gallery-item {
+	border:1px solid #ccc;
+}
+
+.gallery-item:hover {
+	cursor: pointer;
+	border:1px solid #777;
+}
+
+.gallery-item img {/*en boy oranını bozmamak için object-fit*/
+	width: 100%;
+	height: 200px;/*sabit */
+	object-fit: cover;/*crop*/
+	object-position: 30% 50%;
+    /*contain: orjinali sığdır,fill :bozulma,fit-none,position:bottom,top veya (position:100% 100%)*/
+}
+
+.description {
+	text-align: center;
+	padding: 15px;
+}
