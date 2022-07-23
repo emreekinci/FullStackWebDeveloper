@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	
+		/*		
+			** Tüm kutulara 300px genişlik ve yükseklik veriniz.
+		    ** Tüm kutulara border veriniz.
+			** Box #1 : kırmızı , Box #2 : blue , Box #1 : turuncu arkaplan renklerini veriniz.
+		    ** Tüm kutuları yan yana getirin. 
+			** Sayfa başlığının yüksekliğini 150px ve arkaplan rengini ise mavi yapınız.
+        
+        inline etiketler width height a sahip değildir
+		*/
+        
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 1px solid blue;
+            background-color: beige;
+            margin-top: 5px;
+            padding: 10px;
+            display: inline-block;
+        }
+        #header {
+            height: 135px;
+            width: 440px;
+            padding: 25px 20px;            
+            padding-right: 190px;
+        }
+        
+        #first {
+            background-color: aqua;            
+        }
+        
+        #second {
+            background-color: bisque;
+        }
+        
+        #third {
+            background-color: antiquewhite;
+        }
+        
+        .burlywood {
+            background-color: burlywood;
+        }
+        
+        .bisque{
+            background-color: bisque;
+        }
+        .antiquewhite{
+            background-color: antiquewhite;
+        }
+        
+		
+	</style>
+</head>
+<body>
+
+	<div id="header" class="burlywood">
+		Game Header
+	</div>
+	
+	<div id="first" class="box ">
+		Box #1
+	</div>
+	
+	<div id="second" class="box"> 
+		Box #2
+	</div>
+	
+	<div id="third" class="box">
+		Box #3
+	</div>
+	<div class="box burlywood">
+	    Box #4
+	</div>
+	
+</body>
+</html>
+
