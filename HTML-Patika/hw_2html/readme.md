@@ -11,8 +11,6 @@ Kurduğunuz yapılarda block, inline gibi elementler kullanmaya çalışın.
 
 ```
 
-<img src="C:\Users\emre\Masaüstü\Front End\HTML-Patika\hx_2html\img\secondwebpage.png" alt="Breaking Bad" title="  " width="1400" height="850">
-
 Bu ödevde HTML öğelerini nasıl kullanırız, bir yapıyı nasıl oluştururuz onu gördük. Sıradaki dersimize devam edelim ve bir sonraki ödevi iple çekelim. Ödevleri sevelim, bağrımıza basalım.
 
 
