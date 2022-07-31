@@ -1,4 +1,4 @@
-# Menü kısmında sadece potfolyo ve blog linkleri aktiftir.
+# INFO
 
 ```
 - Aktif Linkler : Portfolyo Sayfasında
