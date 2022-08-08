@@ -1,0 +1,33 @@
+.color-red {
+  color: red;
+}
+.color-orng {
+  color: sandybrown;
+}
+.body {
+  background-color: #89c0ca;
+}
+
+.pill {
+  background-color: grey;
+  color: white;
+  font-size: 9px;
+}
+
+.bg_lght {
+  background-color: lightskyblue;
+}
+
+ul li {
+    list-style: none;
+    font-size: 26px;
+
+}
+h1{
+    margin-bottom: 45px;
+}
+
+p {
+    margin-left: 1.5 rem;
+    margin-right: 1.5 rem;
+}
